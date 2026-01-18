@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 @org.springframework.stereotype.Repository
 public class Repository {
     private final NamedParameterJdbcTemplate template;
-    String scriptFileName = read("select_product.sql");
+    String scriptFileName = read("select.sql");
 
     public Repository(NamedParameterJdbcTemplate template) {
         this.template = template;
@@ -35,3 +35,4 @@ public class Repository {
         return result;
     }
 }
+
