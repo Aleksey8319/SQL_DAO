@@ -10,10 +10,10 @@ import java.util.List;
 
 @RestController
 
-public class Controller {
+public class ProductController {
     protected Service service;
 
-    public Controller(Service service) {
+    public ProductController(Service service) {
         this.service = service;
     }
 
@@ -23,4 +23,5 @@ public class Controller {
         return service.getProducts(name);
     }
 }
+
 
