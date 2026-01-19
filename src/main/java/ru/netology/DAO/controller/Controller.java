@@ -11,7 +11,7 @@ import java.util.List;
 @RestController
 
 public class Controller {
-    Service service;
+    protected Service service;
 
     public Controller(Service service) {
         this.service = service;
@@ -23,3 +23,4 @@ public class Controller {
         return service.getProducts(name);
     }
 }
+
